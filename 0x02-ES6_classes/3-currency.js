@@ -40,6 +40,6 @@ export default class Currency {
 
   // - Implement a method named displayFullCurrency()
   displayFullCurrency() {
-    return `${this._symbol} ${this._name}`;
+    return `${this._name} (${this._symbol})`;
   }
 }
