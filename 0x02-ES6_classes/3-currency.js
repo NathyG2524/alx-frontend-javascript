@@ -43,4 +43,3 @@ export default class Currency {
     return `${this._symbol} ${this._name}`;
   }
 }
-
