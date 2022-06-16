@@ -2,12 +2,12 @@
 export default class Currency {
   // - Constructor attributes:
 
-  constructor(symbol, name) {
+  constructor(code, name) {
     // code (String)
-    if (typeof symbol !== 'string') {
-      throw new Error('symbol must be a string');
+    if (typeof code !== 'string') {
+      throw new Error('code must be a string');
     }
-    this._symbol = symbol;
+    this._code = code;
     // name (String)
     if (typeof name !== 'string') {
       throw new Error('name must be a string');
@@ -16,15 +16,15 @@ export default class Currency {
   }
 
   // Implement a getter and setter for each attribute.
-  get symbol() {
-    return this._symbol;
+  get code() {
+    return this._code;
   }
 
-  set symbol(symbol) {
-    if (typeof symbol !== 'string') {
-      throw new Error('symbol must be a string');
+  set code(code) {
+    if (typeof code !== 'string') {
+      throw new Error('code must be a string');
     }
-    this._symbol = symbol;
+    this._code = code;
   }
 
   get name() {
@@ -40,6 +40,6 @@ export default class Currency {
 
   // - Implement a method named displayFullCurrency()
   displayFullCurrency() {
-    return `${this._name} (${this._symbol})`;
+    return `${this._name} (${this._code})`;
   }
 }
