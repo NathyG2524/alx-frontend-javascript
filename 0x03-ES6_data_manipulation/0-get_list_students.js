@@ -6,11 +6,11 @@ export default function getListStudents() {
   },
   {
     id: 2,
-    firstNmae: 'Guillaume',
-    location: 'San Francisco',
+    firstNmae: 'James',
+    location: 'Columbia',
   },
   {
-    id: 3,
+    id: 5,
     firstNmae: 'Serena',
     location: 'San Francisco',
   }];
