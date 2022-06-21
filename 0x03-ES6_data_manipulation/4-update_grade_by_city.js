@@ -7,7 +7,7 @@ export default function updateStudentGradeByCity(student, city, newGrades) {
   const stu = loc.map((element) => {
     const grades = newGrades.filter((gra) => gra.studentId === element.id);
     if (grades.length > 0) {
-      if (grades[0].grade === 'undefined') {
+      if (grades[0].grade ) {
         element.grade = grades[0].grade;
       }
     } else {
